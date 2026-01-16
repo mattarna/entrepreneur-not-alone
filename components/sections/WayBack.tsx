@@ -80,7 +80,7 @@ export default function WayBack() {
                 className="max-w-4xl mx-auto"
               >
                 <p className="text-lg md:text-2xl lg:text-3xl font-light leading-[1.3] tracking-tight text-black/90 font-serif italic">
-                  We step in when things feel stuck.
+                  We step in when things feel stuck,
                   <br />
                   <span className="text-[#0D9488] font-medium not-italic">and help you regain clarity, direction, and breathing room.</span>
                 </p>
