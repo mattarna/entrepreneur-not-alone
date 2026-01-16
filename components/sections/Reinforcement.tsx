@@ -28,14 +28,16 @@ export default function Reinforcement() {
         >
           {/* Headline */}
           <h2 className="text-[1.4rem] md:text-[3rem] lg:text-[4.5rem] font-medium leading-[1.15] tracking-tight text-black font-serif">
-            Not Everyone Makes It Through.
+            Not all entrepreneurs make it through.
             <br />
-            <span className="text-[#0D9488] italic">These Did, Because Someone Stepped In.</span>
+            <span className="text-[#0D9488] italic">These ones did, because someone stepped in.</span>
           </h2>
 
           {/* Subtext */}
           <p className="text-base md:text-2xl text-black font-medium max-w-2xl mx-auto leading-relaxed font-sans">
-            Support isn&apos;t just a gesture. It&apos;s the difference between a story that ends and a story that continues.
+            Support isn&apos;t just a gesture.
+            <br />
+            It&apos;s the difference between a nightmare and a happily ever after.
           </p>
 
           {/* CTA */}

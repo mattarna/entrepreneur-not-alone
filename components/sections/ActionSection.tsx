@@ -36,9 +36,9 @@ export default function ActionSection() {
           className="text-center mb-5 md:mb-12 max-w-4xl"
         >
           <h2 className="text-[1.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-[-0.02em] text-white font-serif">
-            If You&apos;ve Ever Been Supported:
+            If life has been generous with you,
             <br />
-            <span className="text-[#5EEAD4] italic">Now Pay It Forward.</span>
+            <span className="text-[#5EEAD4] italic">Now it&apos;s your time to give back.</span>
           </h2>
         </motion.div>
 
