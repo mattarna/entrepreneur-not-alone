@@ -178,7 +178,7 @@ export default function WayBack() {
                 Practical Tools & Coaching
               </h3>
               <p className="text-lg md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
-                Support from people who've built businesses themselves,
+                Support from people who&apos;ve built businesses themselves,
                 <br />
                 focused on real problems, not generic advice.
               </p>

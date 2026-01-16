@@ -118,11 +118,11 @@ export default function Impact() {
               >
                 {/* Quote Mark */}
                 <div className="absolute -top-4 md:-top-8 -left-1 md:-left-2 text-[5rem] md:text-[8rem] leading-none font-serif text-[#5EEAD4]/20 select-none">
-                  "
+                  &quot;
                 </div>
                 <blockquote className="relative z-10">
                   <p className="text-xl md:text-2xl font-light leading-relaxed text-black/80 italic font-serif">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </p>
                   <footer className="mt-6">
                     <span className="text-sm md:text-sm font-medium text-black/40 tracking-wide font-sans">

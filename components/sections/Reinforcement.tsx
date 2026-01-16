@@ -35,7 +35,7 @@ export default function Reinforcement() {
 
           {/* Subtext */}
           <p className="text-xl md:text-2xl text-black font-medium max-w-2xl mx-auto leading-relaxed font-sans">
-            Support isn't just a gesture. It's the difference between a story that ends and a story that continues.
+            Support isn&apos;t just a gesture. It&apos;s the difference between a story that ends and a story that continues.
           </p>
 
           {/* CTA */}

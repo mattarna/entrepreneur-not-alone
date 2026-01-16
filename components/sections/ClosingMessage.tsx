@@ -28,13 +28,13 @@ export default function ClosingMessage() {
 
           <div className="space-y-6 md:space-y-10">
             <p className="text-[1.65rem] md:text-[2.5rem] lg:text-[3.5rem] text-black font-medium leading-[1.2] tracking-tight max-w-5xl mx-auto font-serif">
-              Your contribution doesn't fund an idea.
+              Your contribution doesn&apos;t fund an idea.
               <br />
               <span className="text-[#0D9488] italic">It gives time, clarity, and human guidance to someone who needs it right now.</span>
             </p>
 
             <p className="text-lg md:text-xl lg:text-2xl text-black/80 font-medium leading-relaxed max-w-4xl mx-auto font-serif italic">
-              Your donation today can help an entrepreneur stay in business, and keep everything they've built from falling apart.
+              Your donation today can help an entrepreneur stay in business, and keep everything they&apos;ve built from falling apart.
             </p>
           </div>
 

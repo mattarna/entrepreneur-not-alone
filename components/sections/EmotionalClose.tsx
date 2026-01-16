@@ -32,11 +32,11 @@ export default function EmotionalClose() {
           <p className="text-lg md:text-xl text-white/50 font-light leading-relaxed">
             When a business survives,
             <br />
-            it's not just numbers that stay alive.
+            it&apos;s not just numbers that stay alive.
           </p>
           
           <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed">
-            It's the people who work there.
+            It&apos;s the people who work there.
             <br />
             The families who depend on it.
             <br />
@@ -44,7 +44,7 @@ export default function EmotionalClose() {
           </p>
 
           <p className="text-base md:text-lg text-white/40 font-light leading-relaxed">
-            This kind of support doesn't make headlines.
+            This kind of support doesn&apos;t make headlines.
             <br />
             But it prevents collapse. It preserves dignity.
             <br />
