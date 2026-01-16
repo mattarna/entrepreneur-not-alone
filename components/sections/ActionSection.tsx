@@ -13,7 +13,7 @@ export default function ActionSection() {
   const amounts = [500, 250, 150, 50, 25, 10]
 
   return (
-    <section className="relative min-h-[85vh] md:min-h-screen w-full flex flex-col items-center justify-center py-14 md:py-40 overflow-hidden">
+    <section id="donate" className="relative min-h-[85vh] md:min-h-screen w-full flex flex-col items-center justify-center py-14 md:py-40 overflow-hidden">
       {/* Background Image with Overlay and placeholder color */}
       <div className="absolute inset-0 z-0 bg-black">
         <Image
