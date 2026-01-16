@@ -54,8 +54,8 @@ export default function Footer() {
             © {currentYear} IMPRENDITORE NON SEI SOLO ETS. ALL RIGHTS RESERVED.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/20 hover:text-white/40 text-[10px] md:text-xs tracking-widest uppercase font-sans transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white/20 hover:text-white/40 text-[10px] md:text-xs tracking-widest uppercase font-sans transition-colors">Terms of Service</a>
+            <a href="/privacy" className="text-white/20 hover:text-white/40 text-[10px] md:text-xs tracking-widest uppercase font-sans transition-colors">Privacy Policy</a>
+            <a href="/cookie" className="text-white/20 hover:text-white/40 text-[10px] md:text-xs tracking-widest uppercase font-sans transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>
