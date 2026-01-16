@@ -23,18 +23,18 @@ export default function Header() {
         <button className={cn(
           "group relative overflow-hidden px-6 py-3 rounded-full font-bold text-sm transition-all duration-500",
           scrolled 
-            ? "bg-[#5EEAD4] text-black shadow-[0_0_20px_rgba(94,234,212,0.4)] scale-105" 
-            : "bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-black"
+            ? "bg-[#5EEAD4] text-black shadow-[0_0_20px_rgba(94,234,212,0.4)] scale-105 hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]" 
+            : "bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-[#5EEAD4] hover:text-black hover:border-[#5EEAD4]"
         )}>
           <span className="relative z-10 flex items-center gap-2">
             <span className="relative flex h-2 w-2">
               <span className={cn(
                 "animate-ping absolute inline-flex h-full w-full rounded-full opacity-75",
-                scrolled ? "bg-black" : "bg-[#5EEAD4]"
+                scrolled ? "bg-black group-hover:bg-[#5EEAD4]" : "bg-[#5EEAD4] group-hover:bg-black"
               )}></span>
               <span className={cn(
                 "relative inline-flex rounded-full h-2 w-2",
-                scrolled ? "bg-black" : "bg-[#5EEAD4]"
+                scrolled ? "bg-black group-hover:bg-[#5EEAD4]" : "bg-[#5EEAD4] group-hover:bg-black"
               )}></span>
             </span>
             Donate
