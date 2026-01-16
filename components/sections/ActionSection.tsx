@@ -107,15 +107,11 @@ export default function ActionSection() {
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({ amount }),
                 });
-                const { sessionId, error } = await response.json();
+                const { url, error } = await response.json();
                 if (error) throw new Error(error);
 
-                const { loadStripe } = await import('@stripe/stripe-js');
-                const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
-                
-                if (stripe) {
-                  await stripe.redirectToCheckout({ sessionId });
-                }
+                // Redirect to Stripe Checkout
+                window.location.href = url;
               } catch (err) {
                 alert('Payment failed to start. Please try again.');
                 console.error(err);
