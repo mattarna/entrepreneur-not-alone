@@ -110,8 +110,12 @@ export default function ActionSection() {
                 const { sessionId, error } = await response.json();
                 if (error) throw new Error(error);
 
-                const stripe = (await import('@stripe/stripe-js')).loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
-                (await stripe)?.redirectToCheckout({ sessionId });
+                const { loadStripe } = await import('@stripe/stripe-js');
+                const stripe = await loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+                
+                if (stripe) {
+                  await stripe.redirectToCheckout({ sessionId });
+                }
               } catch (err) {
                 alert('Payment failed to start. Please try again.');
                 console.error(err);
