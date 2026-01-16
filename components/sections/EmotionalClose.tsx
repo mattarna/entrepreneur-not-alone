@@ -81,8 +81,11 @@ export default function EmotionalClose() {
           >
             Donate Now
           </a>
-          <p className="text-white/20 text-[10px] md:text-xs mt-4 md:mt-6 tracking-wide font-sans">
-            100% goes to entrepreneur support
+          <p className="text-white/30 text-[10px] md:text-xs mt-4 md:mt-6 tracking-[0.1em] font-sans uppercase">
+            Official international arm of Imprenditore Non Sei Solo ETS
+          </p>
+          <p className="text-white/20 text-[9px] md:text-[10px] mt-2 tracking-wide font-sans italic">
+            100% of donations are transferred directly to the nonprofit
           </p>
         </motion.div>
 

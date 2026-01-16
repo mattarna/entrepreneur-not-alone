@@ -122,8 +122,10 @@ export default function ActionSection() {
             Donate Now
           </button>
 
-          <p className="text-center mt-5 text-[11px] text-black/30 font-medium">
-            No overhead storytelling. Just real support.
+          <p className="text-center mt-5 text-[11px] text-black/40 font-medium leading-relaxed">
+            100% of your gift goes directly to the association&apos;s bank account via Stripe.
+            <br />
+            <span className="opacity-60 italic">Your support helps entrepreneurs find their way back.</span>
           </p>
         </motion.div>
 

@@ -8,6 +8,7 @@ import Reinforcement from '@/components/sections/Reinforcement'
 import ActionSection from '@/components/sections/ActionSection'
 import ClosingMessage from '@/components/sections/ClosingMessage'
 import EmotionalClose from '@/components/sections/EmotionalClose'
+import Footer from '@/components/shared/Footer'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <ActionSection />
       <ClosingMessage />
       <EmotionalClose />
+      <Footer />
     </main>
   )
 }
