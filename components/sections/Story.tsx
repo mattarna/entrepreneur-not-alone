@@ -11,11 +11,10 @@ export default function Story() {
     offset: ["start end", "end start"]
   })
 
-  // Transform scroll progress to color values (gray to black)
-  const text1Opacity = useTransform(scrollYProgress, [0.1, 0.25], [0.15, 1])
-  const text2Opacity = useTransform(scrollYProgress, [0.3, 0.45], [0.15, 1])
-  const text3Opacity = useTransform(scrollYProgress, [0.5, 0.65], [0.15, 1])
-  const text4Opacity = useTransform(scrollYProgress, [0.7, 0.82], [0.15, 1])
+  const text1Opacity = useTransform(scrollYProgress, [0.1, 0.2], [0.15, 1])
+  const text2Opacity = useTransform(scrollYProgress, [0.25, 0.35], [0.15, 1])
+  const text3Opacity = useTransform(scrollYProgress, [0.4, 0.5], [0.15, 1])
+  const text4Opacity = useTransform(scrollYProgress, [0.55, 0.65], [0.15, 1])
 
   return (
     <section 
@@ -58,8 +57,9 @@ export default function Story() {
           </motion.div>
 
           <motion.div style={{ opacity: text4Opacity }}>
-            <p className="text-[1.25rem] md:text-[2rem] lg:text-[2.25rem] font-medium leading-[1.35] tracking-tight text-black border-t border-black/5 pt-6 md:pt-12 font-serif italic">
+            <p className="text-[1.35rem] md:text-[2.25rem] lg:text-[2.5rem] font-semibold leading-[1.3] tracking-tight text-black border-t-2 border-black/10 pt-8 md:pt-14 font-serif italic">
               This is the part of entrepreneurship most people never see.
+              <br className="md:block hidden" />
               And the part that hurts the most.
             </p>
           </motion.div>
