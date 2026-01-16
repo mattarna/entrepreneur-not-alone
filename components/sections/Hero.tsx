@@ -23,11 +23,11 @@ export default function Hero() {
       {/* Content Layer */}
       <div className="relative z-10 flex-1 flex flex-col px-6 md:px-12 lg:px-20 py-8">
         {/* Navigation Spacer */}
-        <div className="h-24" />
+        <div className="h-16 md:h-24" />
 
         <div className="flex-1 flex flex-col justify-between max-w-[1600px] mx-auto w-full">
-          {/* Headline - Centered Vertically */}
-          <div className="flex-1 flex items-center">
+          {/* Headline - Pushed up on mobile, Centered on desktop */}
+          <div className="flex-1 flex items-start pt-12 md:items-center md:pt-0">
             <div className="max-w-6xl">
               <h1 className="text-[3rem] md:text-[5rem] lg:text-[7rem] font-medium text-white leading-[0.9] tracking-[-0.03em] font-serif">
                 Bringing some
