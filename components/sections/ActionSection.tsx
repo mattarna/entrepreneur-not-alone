@@ -42,20 +42,6 @@ export default function ActionSection() {
           </h2>
         </motion.div>
 
-        {/* Intro Text */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.15 }}
-          className="text-center mb-8 md:mb-16 max-w-xl"
-        >
-          <p className="text-base md:text-xl text-white/80 font-light leading-relaxed font-sans">
-            There was likely a moment when things could have gone a different way for you.
-            A decision made in time. Someone who helped you see clearly.
-          </p>
-        </motion.div>
-
         {/* The Donation Box */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -133,7 +119,7 @@ export default function ActionSection() {
 
           {/* CTA Button */}
           <button className="w-full bg-[#5EEAD4] hover:bg-[#4fd9c3] text-black py-4 rounded-2xl font-bold text-base transition-all active:scale-[0.98]">
-            Continue
+            Donate Now
           </button>
 
           <p className="text-center mt-5 text-[11px] text-black/30 font-medium">
