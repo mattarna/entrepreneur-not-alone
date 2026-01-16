@@ -36,7 +36,7 @@ export default function ActionSection() {
           className="text-center mb-8 md:mb-12 max-w-4xl"
         >
           <h2 className="text-[1.75rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-[-0.02em] text-white font-serif">
-            If You've Ever Been Supported:
+            If You&apos;ve Ever Been Supported:
             <br />
             <span className="text-[#5EEAD4] italic">Now Pay It Forward.</span>
           </h2>
