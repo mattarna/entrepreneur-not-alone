@@ -114,10 +114,10 @@ export default function WayBack() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-48 h-48 md:w-96 md:h-96 mix-blend-multiply opacity-90 -mt-4 md:-mt-12"
+              className="relative w-48 h-48 md:w-96 md:h-96 opacity-90 -mt-4 md:-mt-12"
             >
               <Image
-                src="/images/logo (1).jpeg"
+                src="/images/logo without background.png"
                 alt="Logo Icon"
                 fill
                 className="object-contain"
