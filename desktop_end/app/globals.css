@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spring: #5EEAD4;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black antialiased font-sans;
+  }
+}
+
+/* Force visibility */
+.text-white { color: white !important; }
+.text-black { color: black !important; }
+
+/* Custom Font Smoothing */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
