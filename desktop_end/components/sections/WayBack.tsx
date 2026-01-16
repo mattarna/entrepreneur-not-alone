@@ -55,11 +55,11 @@ export default function WayBack() {
         <div className="absolute inset-0 z-1 bg-white/65 backdrop-blur-[10px]" />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-white via-white/20 to-white/95" />
 
-        <div ref={manifestoRef} className="relative z-10 min-h-[85vh] flex items-center justify-center px-6 md:px-12 lg:px-20 py-24">
+        <div ref={manifestoRef} className="relative z-10 min-h-[70vh] md:min-h-[85vh] flex items-center justify-center px-6 md:px-12 lg:px-20 py-12 md:py-24">
           <div className="max-w-[1400px] mx-auto w-full text-center flex flex-col items-center">
             
             {/* Headline Group with Staggered Reveal */}
-            <div className="mb-14">
+            <div className="mb-8 md:mb-14">
               <motion.h2 
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +79,7 @@ export default function WayBack() {
                 transition={{ delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 className="max-w-4xl mx-auto"
               >
-                <p className="text-lg md:text-2xl lg:text-3xl font-light leading-[1.3] tracking-tight text-black/90 font-serif italic">
+                <p className="text-xl md:text-2xl lg:text-3xl font-light leading-[1.3] tracking-tight text-black/90 font-serif italic">
                   We step in when things feel stuck.
                   <br />
                   <span className="text-[#0D9488] font-medium not-italic">and help you regain clarity, direction, and breathing room.</span>
@@ -93,13 +93,13 @@ export default function WayBack() {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1.5, ease: "circOut" }}
-              className="h-px w-24 bg-black/10 mb-14 origin-center"
+              className="h-px w-24 bg-black/10 mb-8 md:mb-14 origin-center"
             />
 
             {/* The "Not" statements - Moved down and styled more subtly */}
             <motion.div 
               style={{ opacity: notOpacity, y: notY, willChange: 'opacity, transform' }}
-              className="mb-3"
+              className="mb-0"
             >
               <p className="text-lg md:text-xl font-light text-black/40 tracking-tight italic flex flex-wrap justify-center gap-x-6 gap-y-2 font-sans">
                 <span>Not with promises.</span>
@@ -114,7 +114,7 @@ export default function WayBack() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-72 h-72 md:w-96 md:h-96 mix-blend-multiply opacity-90"
+              className="relative w-64 h-64 md:w-96 md:h-96 mix-blend-multiply opacity-90 -mt-8 md:-mt-12"
             >
               <Image
                 src="/images/logo (1).jpeg"
@@ -178,7 +178,7 @@ export default function WayBack() {
                 Practical Tools & Coaching
               </h3>
               <p className="text-lg md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
-                Support from people who've built businesses themselves,
+                Support from people who&apos;ve built businesses themselves,
                 <br />
                 focused on real problems, not generic advice.
               </p>

@@ -13,7 +13,7 @@ export default function ActionSection() {
   const amounts = [500, 250, 150, 50, 25, 10]
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center py-32 md:py-40 overflow-hidden">
+    <section className="relative min-h-screen w-full flex flex-col items-center justify-center py-20 md:py-40 overflow-hidden">
       {/* Background Image with Overlay and placeholder color */}
       <div className="absolute inset-0 z-0 bg-black">
         <Image
@@ -33,10 +33,10 @@ export default function ActionSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12 max-w-4xl"
+          className="text-center mb-8 md:mb-12 max-w-4xl"
         >
-          <h2 className="text-[2rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-[-0.02em] text-white font-serif">
-            If You've Ever Been Supported:
+          <h2 className="text-[1.75rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-[-0.02em] text-white font-serif">
+            If You&apos;ve Ever Been Supported:
             <br />
             <span className="text-[#5EEAD4] italic">Now Pay It Forward.</span>
           </h2>
@@ -48,9 +48,9 @@ export default function ActionSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="text-center mb-16 max-w-xl"
+          className="text-center mb-12 md:mb-16 max-w-xl"
         >
-          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed font-sans">
             There was likely a moment when things could have gone a different way for you.
             A decision made in time. Someone who helped you see clearly.
           </p>

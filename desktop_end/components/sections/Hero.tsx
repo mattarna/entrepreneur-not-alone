@@ -23,11 +23,11 @@ export default function Hero() {
       {/* Content Layer */}
       <div className="relative z-10 flex-1 flex flex-col px-6 md:px-12 lg:px-20 py-8">
         {/* Navigation Spacer */}
-        <div className="h-24" />
+        <div className="h-16 md:h-24" />
 
         <div className="flex-1 flex flex-col justify-between max-w-[1600px] mx-auto w-full">
-          {/* Headline - Centered Vertically */}
-          <div className="flex-1 flex items-center">
+          {/* Headline - Pushed up on mobile, Centered on desktop */}
+          <div className="flex-1 flex items-start pt-12 md:items-center md:pt-0">
             <div className="max-w-6xl">
               <h1 className="text-[3rem] md:text-[5rem] lg:text-[7rem] font-medium text-white leading-[0.9] tracking-[-0.03em] font-serif">
                 Bringing some
@@ -40,23 +40,23 @@ export default function Hero() {
           </div>
 
           {/* Bottom Row - Subheadline Left, Video Preview Right */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 pb-12">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-12 pb-8 md:pb-12">
                 <div className="max-w-2xl">
-                  <p className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-snug tracking-tight">
+                  <p className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-snug tracking-tight font-sans">
                     Because no one should have to navigate the cold alone.
-                    <br className="hidden md:block" />
+                    <br />
                     Reconnect with the support you once needed, and help others bloom again.
                   </p>
                 </div>
 
-            {/* Video Preview Box */}
-            <div className="flex flex-col items-end gap-3">
-              <span className="uppercase tracking-[0.25em] text-[10px] font-bold text-white/70">Watch their story</span>
+            {/* Video Preview Box - Hidden on Mobile, Visible from tablet up */}
+            <div className="hidden md:flex flex-col items-start md:items-end gap-2 w-full md:w-auto">
+              <span className="uppercase tracking-[0.25em] text-[10px] font-bold text-white/70 font-sans">Watch their story</span>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
-                className="relative w-[280px] h-[160px] md:w-[320px] md:h-[180px] rounded-xl overflow-hidden shadow-2xl border-2 border-white/20 cursor-pointer group"
+                className="relative w-full max-w-[340px] aspect-video md:w-[320px] md:h-[180px] rounded-xl overflow-hidden shadow-2xl border-2 border-white/20 cursor-pointer group"
                 onClick={() => {
                   const vslSection = document.getElementById('vsl-section')
                   vslSection?.scrollIntoView({ behavior: 'smooth' })
