@@ -12,10 +12,10 @@ export default function Story() {
   })
 
   // Transform scroll progress to color values (gray to black)
-  const text1Opacity = useTransform(scrollYProgress, [0.1, 0.3], [0.15, 1])
-  const text2Opacity = useTransform(scrollYProgress, [0.3, 0.5], [0.15, 1])
-  const text3Opacity = useTransform(scrollYProgress, [0.5, 0.7], [0.15, 1])
-  const text4Opacity = useTransform(scrollYProgress, [0.7, 0.9], [0.15, 1])
+  const text1Opacity = useTransform(scrollYProgress, [0.1, 0.25], [0.15, 1])
+  const text2Opacity = useTransform(scrollYProgress, [0.3, 0.45], [0.15, 1])
+  const text3Opacity = useTransform(scrollYProgress, [0.5, 0.65], [0.15, 1])
+  const text4Opacity = useTransform(scrollYProgress, [0.7, 0.82], [0.15, 1])
 
   return (
     <section 
