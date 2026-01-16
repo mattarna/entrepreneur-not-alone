@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex flex-col">
+    <section className="relative min-h-[90vh] md:min-h-screen w-full flex flex-col">
       {/* Background Layer with placeholder color and Video */}
       <div className="absolute inset-0 z-0 bg-black">
         <video
