@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 export async function POST(req: Request) {
   try {
-    const { amount, frequency } = await req.json();
+    const { amount } = await req.json();
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -16,20 +16,15 @@ export async function POST(req: Request) {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: frequency === 'monthly' ? 'Monthly Donation' : 'One-time Donation',
+              name: 'Donation',
               description: 'Thank you for supporting entrepreneurs.',
             },
-            unit_amount: amount * 100, // Stripe usa i centesimi
-            ...(frequency === 'monthly' && {
-              recurring: {
-                interval: 'month',
-              },
-            }),
+            unit_amount: amount * 100, // Stripe uses cents
           },
           quantity: 1,
         },
       ],
-      mode: frequency === 'monthly' ? 'subscription' : 'payment',
+      mode: 'payment',
       success_url: `${req.headers.get('origin')}/success`,
       cancel_url: `${req.headers.get('origin')}/cancel`,
     });

@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { cn } from '@/lib/utils'
 
 export default function ActionSection() {
-  const [frequency, setFrequency] = useState<'one-time' | 'monthly'>('one-time')
   const [selectedAmount, setSelectedAmount] = useState<number | null>(250)
   const [customAmount, setCustomAmount] = useState('')
 
@@ -53,29 +52,7 @@ export default function ActionSection() {
           {/* Micro-copy */}
           <div className="text-center mb-6">
             <p className="text-black font-semibold text-base mb-1">Choose the impact you want to make.</p>
-            <p className="text-black/40 text-sm">One-time or monthly. Every contribution matters.</p>
-          </div>
-
-          {/* Frequency Toggle */}
-          <div className="flex bg-gray-100 p-1 rounded-xl mb-5">
-            <button
-              onClick={() => setFrequency('one-time')}
-              className={cn(
-                "flex-1 py-2.5 text-sm font-medium rounded-lg transition-all",
-                frequency === 'one-time' ? "bg-white text-black shadow-sm" : "text-black/40 hover:text-black/60"
-              )}
-            >
-              One-time
-            </button>
-            <button
-              onClick={() => setFrequency('monthly')}
-              className={cn(
-                "flex-1 py-2.5 text-sm font-medium rounded-lg transition-all",
-                frequency === 'monthly' ? "bg-white text-black shadow-sm" : "text-black/40 hover:text-black/60"
-              )}
-            >
-              Monthly
-            </button>
+            <p className="text-black/40 text-sm">Every contribution matters.</p>
           </div>
 
           {/* Amount Grid */}
@@ -128,7 +105,7 @@ export default function ActionSection() {
                 const response = await fetch('/api/checkout', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({ amount, frequency }),
+                  body: JSON.stringify({ amount }),
                 });
                 const { sessionId, error } = await response.json();
                 if (error) throw new Error(error);
