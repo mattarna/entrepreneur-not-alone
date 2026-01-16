@@ -44,13 +44,13 @@ export default function Hero() {
                 <div className="max-w-2xl">
                   <p className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-snug tracking-tight font-sans">
                     Because no one should have to navigate the cold alone.
-                    <br className="hidden md:block" />
+                    <br />
                     Reconnect with the support you once needed, and help others bloom again.
                   </p>
                 </div>
 
-            {/* Video Preview Box */}
-            <div className="flex flex-col items-start md:items-end gap-2 w-full md:w-auto">
+            {/* Video Preview Box - Hidden on Mobile, Visible from tablet up */}
+            <div className="hidden md:flex flex-col items-start md:items-end gap-2 w-full md:w-auto">
               <span className="uppercase tracking-[0.25em] text-[10px] font-bold text-white/70 font-sans">Watch their story</span>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
