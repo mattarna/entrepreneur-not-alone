@@ -13,7 +13,7 @@ export default function ActionSection() {
   const amounts = [500, 250, 150, 50, 25, 10]
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center py-20 md:py-40 overflow-hidden">
+    <section className="relative min-h-[85vh] md:min-h-screen w-full flex flex-col items-center justify-center py-14 md:py-40 overflow-hidden">
       {/* Background Image with Overlay and placeholder color */}
       <div className="absolute inset-0 z-0 bg-black">
         <Image
@@ -26,16 +26,16 @@ export default function ActionSection() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto w-full px-6 flex flex-col items-center">
+      <div className="relative z-10 max-w-[1400px] mx-auto w-full px-4 md:px-6 flex flex-col items-center">
         
         {/* Top Headline */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-8 md:mb-12 max-w-4xl"
+          className="text-center mb-5 md:mb-12 max-w-4xl"
         >
-          <h2 className="text-[1.75rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-[-0.02em] text-white font-serif">
+          <h2 className="text-[1.5rem] md:text-[3.5rem] lg:text-[4.5rem] font-medium leading-[1.1] tracking-[-0.02em] text-white font-serif">
             If You&apos;ve Ever Been Supported:
             <br />
             <span className="text-[#5EEAD4] italic">Now Pay It Forward.</span>
@@ -48,9 +48,9 @@ export default function ActionSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="text-center mb-12 md:mb-16 max-w-xl"
+          className="text-center mb-8 md:mb-16 max-w-xl"
         >
-          <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed font-sans">
+          <p className="text-base md:text-xl text-white/80 font-light leading-relaxed font-sans">
             There was likely a moment when things could have gone a different way for you.
             A decision made in time. Someone who helped you see clearly.
           </p>
@@ -62,7 +62,7 @@ export default function ActionSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="w-full max-w-[440px] bg-white rounded-3xl p-8 shadow-[0_40px_80px_rgba(0,0,0,0.3)]"
+          className="w-full max-w-[440px] bg-white rounded-3xl p-5 md:p-8 shadow-[0_40px_80px_rgba(0,0,0,0.3)]"
         >
           {/* Micro-copy */}
           <div className="text-center mb-6">

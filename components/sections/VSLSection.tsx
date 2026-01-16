@@ -17,7 +17,7 @@ export default function VSLSection() {
   return (
     <section 
       ref={sectionRef}
-      className="relative bg-white py-24 md:py-32 px-6 md:px-12 lg:px-20 min-h-screen flex flex-col items-center justify-center"
+      className="relative bg-white py-12 md:py-32 px-4 md:px-12 lg:px-20 min-h-[70vh] md:min-h-screen flex flex-col items-center justify-center"
     >
       <div className="w-full max-w-6xl">
         {/* Title */}
@@ -26,9 +26,9 @@ export default function VSLSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-8 text-center"
+          className="mb-5 md:mb-8 text-center"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black tracking-tight font-serif">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-medium text-black tracking-tight font-serif">
             Watch the story
           </h2>
         </motion.div>

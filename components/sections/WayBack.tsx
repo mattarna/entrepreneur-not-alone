@@ -55,17 +55,17 @@ export default function WayBack() {
         <div className="absolute inset-0 z-1 bg-white/65 backdrop-blur-[10px]" />
         <div className="absolute inset-0 z-1 bg-gradient-to-b from-white via-white/20 to-white/95" />
 
-        <div ref={manifestoRef} className="relative z-10 min-h-[70vh] md:min-h-[85vh] flex items-center justify-center px-6 md:px-12 lg:px-20 py-12 md:py-24">
+        <div ref={manifestoRef} className="relative z-10 min-h-[60vh] md:min-h-[85vh] flex items-center justify-center px-4 md:px-12 lg:px-20 py-10 md:py-24">
           <div className="max-w-[1400px] mx-auto w-full text-center flex flex-col items-center">
             
             {/* Headline Group with Staggered Reveal */}
-            <div className="mb-8 md:mb-14">
+            <div className="mb-5 md:mb-14">
               <motion.h2 
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                className="text-[2.25rem] md:text-[4rem] lg:text-[5.5rem] font-medium leading-[1] tracking-[-0.04em] text-black mb-3 font-serif"
+                className="text-[1.85rem] md:text-[4rem] lg:text-[5.5rem] font-medium leading-[1.05] tracking-[-0.04em] text-black mb-2 font-serif"
               >
                 We Help Entrepreneurs
                 <br />
@@ -79,7 +79,7 @@ export default function WayBack() {
                 transition={{ delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1] }}
                 className="max-w-4xl mx-auto"
               >
-                <p className="text-xl md:text-2xl lg:text-3xl font-light leading-[1.3] tracking-tight text-black/90 font-serif italic">
+                <p className="text-lg md:text-2xl lg:text-3xl font-light leading-[1.3] tracking-tight text-black/90 font-serif italic">
                   We step in when things feel stuck.
                   <br />
                   <span className="text-[#0D9488] font-medium not-italic">and help you regain clarity, direction, and breathing room.</span>
@@ -93,7 +93,7 @@ export default function WayBack() {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 1.5, ease: "circOut" }}
-              className="h-px w-24 bg-black/10 mb-8 md:mb-14 origin-center"
+              className="h-px w-16 md:w-24 bg-black/10 mb-5 md:mb-14 origin-center"
             />
 
             {/* The "Not" statements - Moved down and styled more subtly */}
@@ -101,7 +101,7 @@ export default function WayBack() {
               style={{ opacity: notOpacity, y: notY, willChange: 'opacity, transform' }}
               className="mb-0"
             >
-              <p className="text-lg md:text-xl font-light text-black/40 tracking-tight italic flex flex-wrap justify-center gap-x-6 gap-y-2 font-sans">
+              <p className="text-base md:text-xl font-light text-black/40 tracking-tight italic flex flex-wrap justify-center gap-x-4 md:gap-x-6 gap-y-1 font-sans">
                 <span>Not with promises.</span>
                 <span>Not with theory.</span>
                 <span>Not by telling you what you should have done.</span>
@@ -114,7 +114,7 @@ export default function WayBack() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-64 h-64 md:w-96 md:h-96 mix-blend-multiply opacity-90 -mt-8 md:-mt-12"
+              className="relative w-48 h-48 md:w-96 md:h-96 mix-blend-multiply opacity-90 -mt-4 md:-mt-12"
             >
               <Image
                 src="/images/logo (1).jpeg"
@@ -129,33 +129,33 @@ export default function WayBack() {
       </div>
 
       {/* Transition Label */}
-      <div className="relative z-10 px-6 md:px-12 lg:px-20 py-10 border-t border-black/5 bg-[#FAFAFA]">
+      <div className="relative z-10 px-4 md:px-12 lg:px-20 py-6 md:py-10 border-t border-black/5 bg-[#FAFAFA]">
         <div className="max-w-[1400px] mx-auto">
-          <span className="text-[11px] font-medium uppercase tracking-[0.3em] text-black/40">
+          <span className="text-[10px] md:text-[11px] font-medium uppercase tracking-[0.3em] text-black/40">
             What that looks like in practice
           </span>
         </div>
       </div>
 
       {/* Part 2: The Three Pillars - Sequential Editorial */}
-      <div className="relative z-10 px-6 md:px-12 lg:px-20 pb-20 bg-[#FAFAFA]">
+      <div className="relative z-10 px-4 md:px-12 lg:px-20 pb-12 md:pb-20 bg-[#FAFAFA]">
         <div className="max-w-[1400px] mx-auto space-y-0">
 
           {/* Pillar 01 */}
           <motion.div 
             style={{ opacity: pillar1Opacity }}
-            className="grid grid-cols-12 gap-6 py-12 border-t border-black/10 group"
+            className="grid grid-cols-12 gap-3 md:gap-6 py-8 md:py-12 border-t border-black/10 group"
           >
             <div className="col-span-12 md:col-span-2">
-              <span className="text-[5rem] md:text-[7rem] font-bold leading-none text-transparent bg-clip-text [-webkit-text-stroke:1px_rgba(0,0,0,0.15)] group-hover:[-webkit-text-stroke:1px_#5EEAD4] transition-all duration-500">
+              <span className="text-[3.5rem] md:text-[7rem] font-bold leading-none text-transparent bg-clip-text [-webkit-text-stroke:1px_rgba(0,0,0,0.15)] group-hover:[-webkit-text-stroke:1px_#5EEAD4] transition-all duration-500">
                 01
               </span>
             </div>
-            <div className="col-span-12 md:col-span-8 md:col-start-4 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-medium tracking-tight text-black mb-6">
+            <div className="col-span-12 md:col-span-8 md:col-start-4 flex flex-col justify-center -mt-2 md:mt-0">
+              <h3 className="text-xl md:text-3xl font-medium tracking-tight text-black mb-3 md:mb-6">
                 Free Guidance and Support
               </h3>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
+              <p className="text-base md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
                 No cost. No pressure. No hidden agenda.
                 <br />
                 Just someone on your side when decisions feel heavy.
@@ -166,18 +166,18 @@ export default function WayBack() {
           {/* Pillar 02 */}
           <motion.div 
             style={{ opacity: pillar2Opacity }}
-            className="grid grid-cols-12 gap-6 py-12 border-t border-black/10 group"
+            className="grid grid-cols-12 gap-3 md:gap-6 py-8 md:py-12 border-t border-black/10 group"
           >
             <div className="col-span-12 md:col-span-2">
-              <span className="text-[5rem] md:text-[7rem] font-bold leading-none text-transparent bg-clip-text [-webkit-text-stroke:1px_rgba(0,0,0,0.15)] group-hover:[-webkit-text-stroke:1px_#5EEAD4] transition-all duration-500">
+              <span className="text-[3.5rem] md:text-[7rem] font-bold leading-none text-transparent bg-clip-text [-webkit-text-stroke:1px_rgba(0,0,0,0.15)] group-hover:[-webkit-text-stroke:1px_#5EEAD4] transition-all duration-500">
                 02
               </span>
             </div>
-            <div className="col-span-12 md:col-span-8 md:col-start-4 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-medium tracking-tight text-black mb-6">
+            <div className="col-span-12 md:col-span-8 md:col-start-4 flex flex-col justify-center -mt-2 md:mt-0">
+              <h3 className="text-xl md:text-3xl font-medium tracking-tight text-black mb-3 md:mb-6">
                 Practical Tools & Coaching
               </h3>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
+              <p className="text-base md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
                 Support from people who&apos;ve built businesses themselves,
                 <br />
                 focused on real problems, not generic advice.
@@ -188,18 +188,18 @@ export default function WayBack() {
           {/* Pillar 03 */}
           <motion.div 
             style={{ opacity: pillar3Opacity }}
-            className="grid grid-cols-12 gap-6 py-12 border-t border-black/10 border-b group"
+            className="grid grid-cols-12 gap-3 md:gap-6 py-8 md:py-12 border-t border-black/10 border-b group"
           >
             <div className="col-span-12 md:col-span-2">
-              <span className="text-[5rem] md:text-[7rem] font-bold leading-none text-transparent bg-clip-text [-webkit-text-stroke:1px_rgba(0,0,0,0.15)] group-hover:[-webkit-text-stroke:1px_#5EEAD4] transition-all duration-500">
+              <span className="text-[3.5rem] md:text-[7rem] font-bold leading-none text-transparent bg-clip-text [-webkit-text-stroke:1px_rgba(0,0,0,0.15)] group-hover:[-webkit-text-stroke:1px_#5EEAD4] transition-all duration-500">
                 03
               </span>
             </div>
-            <div className="col-span-12 md:col-span-8 md:col-start-4 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-medium tracking-tight text-black mb-6">
+            <div className="col-span-12 md:col-span-8 md:col-start-4 flex flex-col justify-center -mt-2 md:mt-0">
+              <h3 className="text-xl md:text-3xl font-medium tracking-tight text-black mb-3 md:mb-6">
                 One-to-One Specialist Advice
               </h3>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
+              <p className="text-base md:text-xl font-light leading-relaxed text-black/60 max-w-2xl">
                 Tailored support for your situation, your numbers, your reality.
                 <br />
                 Because no two businesses (or moments) are the same.

@@ -21,15 +21,15 @@ export default function Hero() {
       </div>
 
       {/* Content Layer */}
-      <div className="relative z-10 flex-1 flex flex-col px-6 md:px-12 lg:px-20 py-8">
+      <div className="relative z-10 flex-1 flex flex-col px-4 md:px-12 lg:px-20 py-6 md:py-8">
         {/* Navigation Spacer */}
-        <div className="h-16 md:h-24" />
+        <div className="h-14 md:h-24" />
 
         <div className="flex-1 flex flex-col justify-between max-w-[1600px] mx-auto w-full">
           {/* Headline - Pushed up on mobile, Centered on desktop */}
-          <div className="flex-1 flex items-start pt-12 md:items-center md:pt-0">
+          <div className="flex-1 flex items-start pt-8 md:items-center md:pt-0">
             <div className="max-w-6xl">
-              <h1 className="text-[3rem] md:text-[5rem] lg:text-[7rem] font-medium text-white leading-[0.9] tracking-[-0.03em] font-serif">
+              <h1 className="text-[2.5rem] md:text-[5rem] lg:text-[7rem] font-medium text-white leading-[0.95] tracking-[-0.03em] font-serif">
                 Bringing some
                 <br />
                 <span className="text-[#5EEAD4] italic">spring</span> to entrepreneurs
@@ -40,9 +40,9 @@ export default function Hero() {
           </div>
 
           {/* Bottom Row - Subheadline Left, Video Preview Right */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-12 pb-8 md:pb-12">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-12 pb-6 md:pb-12">
                 <div className="max-w-2xl">
-                  <p className="text-xl md:text-2xl lg:text-3xl text-white font-light leading-snug tracking-tight font-sans">
+                  <p className="text-lg md:text-2xl lg:text-3xl text-white font-light leading-snug tracking-tight font-sans">
                     Because no one should have to navigate the cold alone.
                     <br />
                     Reconnect with the support you once needed, and help others bloom again.

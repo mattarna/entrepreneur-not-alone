@@ -59,16 +59,16 @@ export default function Impact() {
     <section className="relative bg-white overflow-hidden">
       
       {/* Section Header */}
-      <div className="px-6 md:px-12 lg:px-20 pt-16 md:pt-20 pb-10 md:pb-12">
+      <div className="px-4 md:px-12 lg:px-20 pt-12 md:pt-20 pb-6 md:pb-12">
         <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-12 gap-6 md:gap-8">
+          <div className="grid grid-cols-12 gap-3 md:gap-8">
             <div className="col-span-12 md:col-span-3">
-              <span className="text-[11px] font-medium uppercase tracking-[0.3em] text-black/30 font-sans">
+              <span className="text-[10px] md:text-[11px] font-medium uppercase tracking-[0.3em] text-black/30 font-sans">
                 Proof of Impact
               </span>
             </div>
             <div className="col-span-12 md:col-span-8 md:col-start-5">
-              <h2 className="text-[1.75rem] md:text-[3rem] lg:text-[4rem] font-medium leading-[1.1] tracking-tight text-black font-serif">
+              <h2 className="text-[1.5rem] md:text-[3rem] lg:text-[4rem] font-medium leading-[1.1] tracking-tight text-black font-serif">
                 Real Change for Real Lives.
                 <br />
                 <span className="text-black/40 italic">Trust, not pressure.</span>
@@ -79,9 +79,9 @@ export default function Impact() {
       </div>
 
       {/* Stats Grid */}
-      <div className="px-6 md:px-12 lg:px-20 py-16 border-y border-black/5">
+      <div className="px-4 md:px-12 lg:px-20 py-10 md:py-16 border-y border-black/5">
         <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -91,10 +91,10 @@ export default function Impact() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="text-center md:text-left group"
               >
-                <div className="text-[3.5rem] md:text-[5rem] lg:text-[6rem] font-semibold leading-none tracking-tighter text-black/90 group-hover:text-[#5EEAD4] transition-colors duration-500 font-sans">
+                <div className="text-[2.5rem] md:text-[5rem] lg:text-[6rem] font-semibold leading-none tracking-tighter text-black/90 group-hover:text-[#5EEAD4] transition-colors duration-500 font-sans">
                   <AnimatedNumber value={stat.value} suffix={stat.suffix} />
                 </div>
-                <p className="text-sm md:text-base font-medium text-black/40 mt-3 md:mt-4 tracking-tight font-sans">
+                <p className="text-xs md:text-base font-medium text-black/40 mt-2 md:mt-4 tracking-tight font-sans">
                   {stat.label}
                 </p>
               </motion.div>
@@ -104,9 +104,9 @@ export default function Impact() {
       </div>
 
       {/* Testimonials */}
-      <div className="px-6 md:px-12 lg:px-20 py-24">
+      <div className="px-4 md:px-12 lg:px-20 py-12 md:py-24">
         <div className="max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -117,15 +117,15 @@ export default function Impact() {
                 className="relative"
               >
                 {/* Quote Mark */}
-                <div className="absolute -top-4 md:-top-8 -left-1 md:-left-2 text-[5rem] md:text-[8rem] leading-none font-serif text-[#5EEAD4]/20 select-none">
+                <div className="absolute -top-2 md:-top-8 -left-1 md:-left-2 text-[4rem] md:text-[8rem] leading-none font-serif text-[#5EEAD4]/20 select-none">
                   &quot;
                 </div>
                 <blockquote className="relative z-10">
-                  <p className="text-xl md:text-2xl font-light leading-relaxed text-black/80 italic font-serif">
+                  <p className="text-lg md:text-2xl font-light leading-relaxed text-black/80 italic font-serif">
                     &quot;{testimonial.quote}&quot;
                   </p>
-                  <footer className="mt-6">
-                    <span className="text-sm md:text-sm font-medium text-black/40 tracking-wide font-sans">
+                  <footer className="mt-4 md:mt-6">
+                    <span className="text-xs md:text-sm font-medium text-black/40 tracking-wide font-sans">
                       · {testimonial.author}
                     </span>
                   </footer>
