@@ -37,9 +37,9 @@ function AnimatedNumber({ value, suffix = '' }: { value: number; suffix?: string
 }
 
 const stats = [
-  { value: 1400, suffix: '+', label: 'Entrepreneurs Supported' },
-  { value: 3200, suffix: '+', label: 'Families Helped' },
-  { value: 400, suffix: '+', label: 'Active Volunteers' },
+  { value: 1400, suffix: '', label: 'Entrepreneurs Supported' },
+  { value: 3200, suffix: '', label: 'Families Helped' },
+  { value: 400, suffix: '', label: 'Active Volunteers' },
   { value: 61, suffix: 'M', label: 'Economic Impact' },
 ]
 
