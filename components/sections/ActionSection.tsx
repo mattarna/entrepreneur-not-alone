@@ -118,7 +118,30 @@ export default function ActionSection() {
           </div>
 
           {/* CTA Button */}
-          <button className="w-full bg-[#5EEAD4] hover:bg-[#4fd9c3] text-black py-4 rounded-2xl font-bold text-base transition-all active:scale-[0.98]">
+          <button 
+            disabled={!selectedAmount && !customAmount}
+            onClick={async () => {
+              const amount = selectedAmount || Number(customAmount);
+              if (!amount) return;
+
+              try {
+                const response = await fetch('/api/checkout', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ amount, frequency }),
+                });
+                const { sessionId, error } = await response.json();
+                if (error) throw new Error(error);
+
+                const stripe = (await import('@stripe/stripe-js')).loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+                (await stripe)?.redirectToCheckout({ sessionId });
+              } catch (err) {
+                alert('Payment failed to start. Please try again.');
+                console.error(err);
+              }
+            }}
+            className="w-full bg-[#5EEAD4] hover:bg-[#4fd9c3] text-black py-4 rounded-2xl font-bold text-base transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+          >
             Donate Now
           </button>
 
