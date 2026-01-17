@@ -22,7 +22,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/40 text-sm md:text-base max-w-md font-sans leading-relaxed">
-              The official international arm of <span className="text-white/60">Imprenditore Non Sei Solo</span>. 
+              The official international arm of <a href="https://www.imprenditorenonseisolo.it/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#5EEAD4] transition-colors">Imprenditore Non Sei Solo</a>. 
               We are a group of entrepreneurs and professionals dedicated to supporting colleagues in difficulty through free consultation and training.
             </p>
           </div>
@@ -32,7 +32,14 @@ export default function Footer() {
             <div>
               <h4 className="text-white/80 text-xs uppercase tracking-[0.2em] mb-4 font-sans">Legal & Transparency</h4>
               <div className="text-white/40 text-sm font-sans space-y-1">
-                <p className="text-white/60 font-medium">IMPRENDITORE NON SEI SOLO ETS</p>
+                <a 
+                  href="https://www.imprenditorenonseisolo.it/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white/60 font-medium hover:text-[#5EEAD4] transition-colors block"
+                >
+                  IMPRENDITORE NON SEI SOLO ETS
+                </a>
                 <p>Via dell’Annunciata 31, 20121 - Milano, Italy</p>
                 <p>P.IVA 15169751003 | C.F.: 97986790588</p>
               </div>
