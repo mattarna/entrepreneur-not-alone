@@ -5,6 +5,7 @@ import Story from '@/components/sections/Story'
 import WayBack from '@/components/sections/WayBack'
 import Impact from '@/components/sections/Impact'
 import Reinforcement from '@/components/sections/Reinforcement'
+import Testimonials from '@/components/sections/Testimonials'
 import ActionSection from '@/components/sections/ActionSection'
 import ClosingMessage from '@/components/sections/ClosingMessage'
 import EmotionalClose from '@/components/sections/EmotionalClose'
@@ -22,6 +23,7 @@ export default function Home() {
       <WayBack />
       <Impact />
       <Reinforcement />
+      <Testimonials />
       <ActionSection />
       <ClosingMessage />
       <EmotionalClose />

@@ -38,14 +38,13 @@ export default function VSLSection() {
           style={{ scale, opacity }}
           className="w-full aspect-video bg-black rounded-2xl overflow-hidden shadow-[0_20px_80px_rgba(0,0,0,0.15)]"
         >
-          <video 
-            className="w-full h-full object-cover" 
-            controls 
-            playsInline
-            poster="/images/lonliness 2.png"
-          >
-            <source src="/images/lonliness-video.mp4" type="video/mp4" />
-          </video>
+          <iframe
+            src="https://player.vimeo.com/video/1155528707?h=537304d62c&title=0&byline=0&portrait=0&badge=0"
+            className="w-full h-full"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            title="Entrepreneur Not Alone VSL"
+          ></iframe>
         </motion.div>
       </div>
     </section>

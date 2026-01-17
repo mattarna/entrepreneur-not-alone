@@ -62,15 +62,13 @@ export default function Hero() {
                   vslSection?.scrollIntoView({ behavior: 'smooth' })
                 }}
               >
-                <video 
-                  className="w-full h-full object-cover" 
-                  muted 
-                  loop 
-                  autoPlay 
-                  playsInline
-                >
-                  <source src="/images/lonliness-video.mp4" type="video/mp4" />
-                </video>
+                <iframe
+                  src="https://player.vimeo.com/video/1155528707?h=537304d62c&autoplay=1&loop=1&muted=1&background=1"
+                  className="w-full h-full pointer-events-none"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen"
+                  title="VSL Preview"
+                />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
